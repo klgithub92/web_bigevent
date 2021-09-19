@@ -2,6 +2,7 @@
 $.ajaxPrefilter(function (options) {
   // 在发起真正的ajax之前，统一拼接配置对象
   options.url = 'http://api-breakingnews-web.itheima.net' + options.url
+  // options.url = 'http://127.0.0.1:3007' + options.url
 
   // 统一为有权限的接口配置headers请求头
   if (options.url.indexOf('/my/') !== -1) {
